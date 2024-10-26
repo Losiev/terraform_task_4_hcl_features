@@ -1,6 +1,6 @@
 variable "prefix" {
   default = "tfvmex"
-  type = string
+  type    = string
 }
 
 variable "vm_count" {
@@ -9,8 +9,8 @@ variable "vm_count" {
 
 variable "nsg_rules" {
   type = list(object({
-    name = string
-    priority = number
+    name                   = string
+    priority               = number
     destination_port_range = string
   }))
 }
